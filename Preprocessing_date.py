@@ -24,6 +24,7 @@ print("Std deviation = ",data_scaled.std(axis=0))
 data_scaled_minmax = preprocessing.MinMaxScaler(feature_range=(0,1))
 data_scaled_minmax = data_scaled_minmax.fit_transform(input_data)
 print("\nMin max scaled date : \n",data_scaled_minmax)
+#----------------------------------------------------
 #Нормализация данных
 data_normalized_l1 = preprocessing.normalize(input_data,norm='l1')
 data_normalized_l2 = preprocessing.normalize(input_data,norm='l2')
